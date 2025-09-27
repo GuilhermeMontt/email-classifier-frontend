@@ -1,8 +1,10 @@
 .form-container{
     width: 1000px;
-    margin: 0 auto;
-    background-color: #6d5d06;
-    min-height: 400px;
+    margin: 75px auto;
+    background-color: #000;
+    color: #4b5bec;
+    border: 1px solid #0a1cc2;
+    min-height: calc(100vh - 150px);
     padding: 0 70px;
     border-radius: 5px;
 }
@@ -18,7 +20,7 @@
 .form-box .form-item{
     width: 100%;
     padding: 25px;
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid #0a1cc2;
 }
 
 .form-item label{
@@ -29,9 +31,9 @@
 .form-item input[type='file']{
     width: 400px;
     padding: 10px;
-    background-color: #ddd;
+    background-color: #aaa;
     border-radius: 5px;
-    border: none;
+    border: 1px solid #0a1cc2;
     outline: none;
     overflow: hidden;
 }
@@ -49,4 +51,45 @@
 
 .form-item input[type='submit']:hover{
     background-color: #376381;
+}
+
+.result-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+    text-align: left;
+}
+
+.result-box p{
+    background-color: #aaa;
+    color: #000;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.loading-text,
+.pre-text{
+    font-size: 25px;
+}
+
+.loading-text::after {
+  display: inline-block;
+  animation: ellipsis 1.4s infinite;
+  content: ".";
+  width: 1em;
+  text-align: left;
+}
+
+@keyframes ellipsis {
+  0% {
+    content: ".";
+  }
+  33% {
+    content: "..";
+  }
+  66% {
+    content: "...";
+  }
 }
