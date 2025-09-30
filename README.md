@@ -2,6 +2,12 @@
 
 Esta é a aplicação frontend para o projeto Classificador de Email. Ela fornece uma interface de usuário simples para enviar o conteúdo de um email — seja como texto ou em um arquivo `.pdf`/`.txt` — para um serviço de backend que o classifica em uma categoria específica e sugere uma resposta.
 
+## 🌐 Aplicação Online (Deploy)
+
+A aplicação frontend está disponível para uso online através do seguinte link:
+
+**URL:** `https://email-classifier-frontend-oficial.onrender.com/`
+
 ## ✨ Funcionalidades
 
 - Envio de conteúdo de email via campo de texto.
